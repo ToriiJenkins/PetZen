@@ -1,0 +1,134 @@
+﻿@model PetZen.Models.FeedingModels.FeedingEdit
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Feeding</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Edit Feeding</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.FeedingId)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.FeedDateTime, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.FeedDateTime, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.FeedDateTime, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PetId, "Pet", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("PetId", (IEnumerable<SelectListItem>)ViewData["Pets"], htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.PetId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.FoodId, "Food", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("FoodId", (IEnumerable<SelectListItem>)ViewData["Foods"], htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.FoodId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+    @*<div class="form-group">
+                  @Html.LabelFor(model => model.PetId, htmlAttributes: new { @class = "control-label col-md-2" })
+                  <div class="col-md-10">
+                      @Html.EditorFor(model => model.PetId, new { htmlAttributes = new { @class = "form-control" } })
+                      @Html.ValidationMessageFor(model => model.PetId, "", new { @class = "text-danger" })
+                  </div>
+        </div>
+
+          <div class="form-group">
+              @Html.LabelFor(model => model.PetName, htmlAttributes: new { @class = "control-label col-md-2" })
+              <div class="col-md-10">
+                  @Html.EditorFor(model => model.PetName, new { htmlAttributes = new { @class = "form-control" } })
+                  @Html.ValidationMessageFor(model => model.PetName, "", new { @class = "text-danger" })
+             </div>
+        </div>*@
+
+
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.FoodId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FoodId, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FoodId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FoodName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FoodName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FoodName, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+    @*<div class="form-group">
+            @Html.LabelFor(model => model.FoodName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.FoodName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.FoodName, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.AmountFed, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.AmountFed, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.AmountFed, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Measurement, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EnumDropDownListFor(model => model.Measurement, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Measurement, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Default, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="checkbox">
+                @Html.EditorFor(model => model.Default)
+                @Html.ValidationMessageFor(model => model.Default, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Notes, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Notes, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Notes, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

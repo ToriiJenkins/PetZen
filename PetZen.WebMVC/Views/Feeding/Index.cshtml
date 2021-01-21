@@ -1,0 +1,84 @@
+﻿@model IEnumerable<PetZen.Models.FeedingModels.FeedingListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Feeding List</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@if (TempData.ContainsKey("SaveResult"))
+{
+    <div class="alert alert-success fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @TempData["SaveResult"]
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FeedingId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FeedDateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PetName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AmountFed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Measurement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Default)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FeedingId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FeedDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PetName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FoodName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AmountFed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Measurement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Default)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.FeedingId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.FeedingId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.FeedingId })
+            </td>
+        </tr>
+    }
+
+</table>

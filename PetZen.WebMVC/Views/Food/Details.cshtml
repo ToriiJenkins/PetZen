@@ -1,0 +1,66 @@
+﻿@model PetZen.Models.FoodModels.FoodDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Food Details</h2>
+
+<div>
+    <h4>Food Detail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FoodId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FoodId)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.OwnerId)
+        </dt>*@
+
+        @*<dd>
+            @Html.DisplayFor(model => model.OwnerId)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Species)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Species)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.ServingSize)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ServingSize)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PurchaseLink)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PurchaseLink)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.FoodId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

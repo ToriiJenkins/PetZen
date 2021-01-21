@@ -1,0 +1,79 @@
+﻿@model IEnumerable<PetZen.Models.PetListItem>
+
+@{
+    ViewBag.Title = "Pets";
+}
+
+<h2>Pets</h2>
+
+<p>
+    @Html.ActionLink("Add Pet", "Create")
+</p>
+@if (TempData.ContainsKey("SaveResult"))
+{
+    <div class="alert alert-success fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @TempData["SaveResult"]
+    </div>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PetId)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.OwnerId)
+            </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Breed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Weight)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.MealsPerDay)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PetId)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.OwnerId)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Breed)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.DateOfBirth)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.MealsPerDay)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.PetId }) |
+                @Html.ActionLink("Details", "Details", new {  id=item.PetId }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.PetId })
+            </td>
+        </tr>
+    }
+
+</table>

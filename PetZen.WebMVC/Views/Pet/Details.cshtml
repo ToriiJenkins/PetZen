@@ -1,0 +1,78 @@
+﻿@model PetZen.Models.PetModels.PetDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Pet Details</h2>
+
+<div>
+    <h4>Pet Detail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PetId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PetId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+        @Html.DisplayNameFor(model => model.Species)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Species)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Breed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Breed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @if (Model.DateOfBirth != null)
+            {
+                @Html.DisplayFor(model => model.DateOfBirth)
+            }
+
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MealsPerDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MealsPerDay)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PetId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

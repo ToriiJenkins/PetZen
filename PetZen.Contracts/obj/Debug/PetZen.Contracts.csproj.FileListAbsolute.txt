@@ -1,0 +1,16 @@
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\PetZen.Contracts.dll
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\PetZen.Contracts.pdb
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\obj\Debug\PetZen.Contracts.csprojAssemblyReference.cache
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\obj\Debug\PetZen.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\obj\Debug\PetZen.Contracts.dll
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\obj\Debug\PetZen.Contracts.pdb
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\PetZen.Contracts.dll.config
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\EntityFramework.dll
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\EntityFramework.xml
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Contracts\obj\Debug\PetZen.Contracts.csproj.CopyComplete
