@@ -269,6 +269,8 @@
     <Content Include="Views\Feeding\Delete.cshtml" />
     <Content Include="Views\Administration\Index.cshtml" />
     <Content Include="Views\Administration\Create.cshtml" />
+    <Content Include="Views\Administration\Details.cshtml" />
+    <Content Include="Views\Administration\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

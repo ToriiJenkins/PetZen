@@ -1,0 +1,76 @@
+﻿@model PetZen.Models.AdministrationModels.AdministrationDetail
+
+<div>
+    <h4>Administration Detail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminDateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dosage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dosage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DoseMeasure)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DoseMeasure)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Default)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Default)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.AdminId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

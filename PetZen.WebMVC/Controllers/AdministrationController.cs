@@ -46,7 +46,7 @@ namespace PetZen.WebMVC.Controllers
 
         }
 
-        //POST: AdministrationCreate
+        //POST: Administration/Create
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -79,6 +79,107 @@ namespace PetZen.WebMVC.Controllers
             return View(model);
         }
 
+        //GET: Administration/Detail
+        [Authorize]
+        public ActionResult Details(int id)
+        {
+            var svc = CreateAdministrationService();
+            var model = svc.GetAdministrationById(id);
+
+            return View(model);
+        }
+
+        //GET: Administration/Edit
+        [Authorize]
+        public ActionResult Edit(int id)
+        {
+            ViewData["Pets"] = _db.Pets.Select(p => new SelectListItem
+            {
+                Text = p.Name,
+                Value = p.PetId.ToString()
+            });
+
+            ViewData["Medications"] = _db.Medications.Select(p => new SelectListItem
+            {
+                Text = p.Name,
+                Value = p.MedId.ToString()
+            });
+
+            var service = CreateAdministrationService();
+            var detail = service.GetAdministrationById(id);
+            var model =
+                new AdministrationEdit
+                {
+                    AdminId = detail.AdminId,
+                    //PetId = detail.PetId,
+                    PetName = detail.PetName,
+                    //MedId = detail.MedId,
+                    MedName = detail.MedName,
+                    AdminDateTime = detail.AdminDateTime,
+                    Dosage = detail.Dosage,
+                    DoseMeasure = detail.DoseMeasure,
+                    Default = detail.Default,
+                    Notes = detail.Notes
+                };
+
+            return View(model);
+        }
+
+        //POST: Administration/Edit
+        [Authorize]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, AdministrationEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.AdminId != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+
+            var service = CreateAdministrationService();
+
+            if (service.UpdateAdministration(model))
+            {
+                TempData["SaveResult"] = "Your administration has been updated.";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Your administration could not be updated.");
+
+            return View(model);
+        }
+
+
+
+        ////GET: Feeding/Delete
+        //[Authorize]
+        //[ActionName("Delete")]
+        //public ActionResult Delete(int id)
+        //{
+        //    var svc = CreateFeedingService();
+        //    var model = svc.GetFeedingById(id);
+
+        //    return View(model);
+        //}
+
+        //POST: Feeding/Delete
+        [Authorize]
+        //[HttpPost]
+        //[ActionName("Delete")]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult DeleteFeeding(int id)
+        //{
+        //    var service = CreateFeedingService();
+
+        //    service.DeleteFeeding(id);
+
+        //    TempData["SaveResult"] = "Your feeding has been removed.";
+
+        //    return RedirectToAction("Index");
+        //}
         private AdministrationService CreateAdministrationService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

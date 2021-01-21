@@ -64,5 +64,48 @@ namespace PetZen.Services
                 return query.ToArray();
             }
         }
+
+        public AdministrationDetail GetAdministrationById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Administrations
+                        .Single(e => e.AdminId == id && e.OwnerId == _userId);
+                return
+                    new AdministrationDetail
+                    {
+                        AdminId = entity.AdminId,
+                        PetName = entity.Pet.Name,
+                        MedName = entity.Medication.Name,
+                        AdminDateTime = entity.AdminDateTime,
+                        Dosage = entity.Dosage,
+                        DoseMeasure =entity.DoseMeasure,
+                        Default = entity.Defalut,
+                        Notes = entity.Notes,
+                    };
+            }
+        }
+
+        public bool UpdateAdministration(AdministrationEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Administrations
+                        .Single(e => e.AdminId == model.AdminId && e.OwnerId == _userId);
+                entity.PetId = model.PetId;
+                entity.MedId = model.MedId;
+                entity.AdminDateTime= model.AdminDateTime;
+                entity.Dosage = model.Dosage;
+                entity.DoseMeasure = model.DoseMeasure;
+                entity.Defalut = model.Default;
+                entity.Notes = model.Notes;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

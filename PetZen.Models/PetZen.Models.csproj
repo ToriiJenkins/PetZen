@@ -80,6 +80,8 @@
     <Compile Include="ActivityModels\ActivityEdit.cs" />
     <Compile Include="ActivityModels\ActivityListItem.cs" />
     <Compile Include="AdministrationModels\AdministrationCreate.cs" />
+    <Compile Include="AdministrationModels\AdministrationDetail.cs" />
+    <Compile Include="AdministrationModels\AdministrationEdit.cs" />
     <Compile Include="AdministrationModels\AdministrationListItem.cs" />
     <Compile Include="FeedingModels\FeedingCreate.cs" />
     <Compile Include="FeedingModels\FeedingDetail.cs" />

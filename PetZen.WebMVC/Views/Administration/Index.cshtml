@@ -26,6 +26,9 @@
             @Html.DisplayNameFor(model => model.Dosage)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.DoseMeasure)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Default)
         </th>
         <th>
@@ -36,34 +39,37 @@
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.AdminId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PetName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MedName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AdminDateTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Dosage)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Default)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Notes)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.AdminId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.AdminId }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.AdminId })
-            </td>
-        </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.AdminId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.PetName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.MedName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.AdminDateTime)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Dosage)
+    </td>
+    <th>
+        @Html.DisplayFor(modelItem => item.DoseMeasure)
+    </th>
+    <td>
+        @Html.DisplayFor(modelItem => item.Default)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Notes)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.AdminId }) |
+        @Html.ActionLink("Details", "Details", new { id = item.AdminId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.AdminId })
+    </td>
+</tr>
     }
 
 </table>

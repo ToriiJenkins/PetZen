@@ -29,7 +29,7 @@ namespace PetZen.Data
         [Required]
         public MeasurementEnum DoseMeasure { get; set; }
         [Required]
-        public bool Defalut { get; set; }
+        public bool? Defalut { get; set; }
         public string Notes { get; set; }
     }
 }
