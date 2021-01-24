@@ -107,5 +107,20 @@ namespace PetZen.Services
                 return ctx.SaveChanges() == 1;
             }
         }
+
+        public bool DeleteAdministration(int adminId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                        ctx
+                            .Administrations
+                            .Single(e => e.AdminId == adminId && e.OwnerId == _userId);
+
+                ctx.Administrations.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

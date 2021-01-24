@@ -1,13 +1,15 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿htm, body {
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;  
 }
 
 /* Set padding to keep content from hitting the edges */
-.body-content {
+/*.body-content {
     padding-left: 15px;
     padding-right: 15px;
-}
+}*/
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -22,3 +24,20 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*.header, .footer{
+    position: fixed;
+}*/
+.navbar{
+    color:white;
+    margin-bottom:5px;
+}
+.jumbotron { 
+    margin-top:30px;
+    width: 100%;
+    min-height: 220px;
+    background-color: #11a4a6;
+    padding: 30px 20px;
+    position: relative;
+}
+

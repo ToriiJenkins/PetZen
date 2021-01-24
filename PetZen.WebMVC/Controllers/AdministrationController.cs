@@ -113,7 +113,7 @@ namespace PetZen.WebMVC.Controllers
                     AdminId = detail.AdminId,
                     //PetId = detail.PetId,
                     PetName = detail.PetName,
-                    //MedId = detail.MedId,
+                   // MedId = detail.MedId,
                     MedName = detail.MedName,
                     AdminDateTime = detail.AdminDateTime,
                     Dosage = detail.Dosage,
@@ -152,34 +152,34 @@ namespace PetZen.WebMVC.Controllers
             return View(model);
         }
 
-
-
-        ////GET: Feeding/Delete
-        //[Authorize]
-        //[ActionName("Delete")]
-        //public ActionResult Delete(int id)
-        //{
-        //    var svc = CreateFeedingService();
-        //    var model = svc.GetFeedingById(id);
-
-        //    return View(model);
-        //}
-
-        //POST: Feeding/Delete
+        //GET: Administration/Delete
         [Authorize]
-        //[HttpPost]
-        //[ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult DeleteFeeding(int id)
-        //{
-        //    var service = CreateFeedingService();
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateAdministrationService();
+            var model = svc.GetAdministrationById(id);
 
-        //    service.DeleteFeeding(id);
+            return View(model);
+        }
 
-        //    TempData["SaveResult"] = "Your feeding has been removed.";
+        //POST: Administration/Delete
+        [Authorize]
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult AdministrationFeeding(int id)
+        {
+            var service = CreateAdministrationService();
 
-        //    return RedirectToAction("Index");
-        //}
+            service.DeleteAdministration(id);
+
+            TempData["SaveResult"] = "Your administration has been removed.";
+
+            return RedirectToAction("Index");
+        }
+
+
         private AdministrationService CreateAdministrationService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

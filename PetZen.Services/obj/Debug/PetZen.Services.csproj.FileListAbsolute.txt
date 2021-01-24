@@ -14,39 +14,6 @@ C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Ser
 C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen.WebMVC\PetZen.Services\obj\Debug\PetZen.Services.csproj.CopyComplete
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\PetZen.Services.dll.config
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\PetZen.Services.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\PetZen.Services.pdb
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\EntityFramework.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\PetZen.Data.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\PetZen.Models.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\PetZen.Data.pdb
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\PetZen.Data.dll.config
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\PetZen.Models.pdb
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\PetZen.Models.dll.config
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\EntityFramework.xml
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\obj\Debug\PetZen.Services.csprojAssemblyReference.cache
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\obj\Debug\PetZen.Services.csproj.CoreCompileInputs.cache
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\obj\Debug\PetZen.Services.csproj.CopyComplete
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\obj\Debug\PetZen.Services.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\obj\Debug\PetZen.Services.pdb
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\System.Web.Mvc.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\System.Web.WebPages.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\System.Web.WebPages.Razor.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\System.Web.Razor.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\System.Web.WebPages.Deployment.dll
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\System.Web.Mvc.xml
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\System.Web.WebPages.xml
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\System.Web.Razor.xml
-C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\PetZen\PetZen.Services\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\Back ups\PetZen7\PetZen.Services\obj\Debug\PetZen.Services.csprojAssemblyReference.cache
 C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\Back ups\PetZen7\PetZen.Services\obj\Debug\PetZen.Services.csproj.CoreCompileInputs.cache
 C:\Users\btjen\Desktop\Eleven Fifty\ElevenFiftyProjects\Back ups\PetZen7\PetZen.Services\obj\Debug\PetZen.Services.dll

@@ -8,6 +8,15 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+@if (TempData.ContainsKey("SaveResult"))
+{
+    <div class="alert alert-success fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        @TempData["SaveResult"]
+    </div>
+}
 <table class="table">
     <tr>
         <th>
@@ -39,37 +48,37 @@
 
     @foreach (var item in Model)
     {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.AdminId)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.PetName)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.MedName)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.AdminDateTime)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Dosage)
-    </td>
-    <th>
-        @Html.DisplayFor(modelItem => item.DoseMeasure)
-    </th>
-    <td>
-        @Html.DisplayFor(modelItem => item.Default)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.Notes)
-    </td>
-    <td>
-        @Html.ActionLink("Edit", "Edit", new { id = item.AdminId }) |
-        @Html.ActionLink("Details", "Details", new { id = item.AdminId }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.AdminId })
-    </td>
-</tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdminId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PetName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MedName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdminDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dosage)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.DoseMeasure)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.Default)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.AdminId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.AdminId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.AdminId })
+            </td>
+        </tr>
     }
 
 </table>

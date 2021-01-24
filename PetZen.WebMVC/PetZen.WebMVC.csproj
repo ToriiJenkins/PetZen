@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ActivityController.cs" />
     <Compile Include="Controllers\AdministrationController.cs" />
+    <Compile Include="Controllers\DailyController.cs" />
     <Compile Include="Controllers\FeedingController.cs" />
     <Compile Include="Controllers\FoodController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -189,6 +190,54 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Asset 1.png" />
+    <Content Include="Content\Images\Asset 10.png" />
+    <Content Include="Content\Images\Asset 11.png" />
+    <Content Include="Content\Images\Asset 12.png" />
+    <Content Include="Content\Images\Asset 13.png" />
+    <Content Include="Content\Images\Asset 14.png" />
+    <Content Include="Content\Images\Asset 15.png" />
+    <Content Include="Content\Images\Asset 16.png" />
+    <Content Include="Content\Images\Asset 17.png" />
+    <Content Include="Content\Images\Asset 18.png" />
+    <Content Include="Content\Images\Asset 19.png" />
+    <Content Include="Content\Images\Asset 2.png" />
+    <Content Include="Content\Images\Asset 20.png" />
+    <Content Include="Content\Images\Asset 21.png" />
+    <Content Include="Content\Images\Asset 22.png" />
+    <Content Include="Content\Images\Asset 23.png" />
+    <Content Include="Content\Images\Asset 24.png" />
+    <Content Include="Content\Images\Asset 25.png" />
+    <Content Include="Content\Images\Asset 26.png" />
+    <Content Include="Content\Images\Asset 27.png" />
+    <Content Include="Content\Images\Asset 28.png" />
+    <Content Include="Content\Images\Asset 29.png" />
+    <Content Include="Content\Images\Asset 30.png" />
+    <Content Include="Content\Images\Asset 31.png" />
+    <Content Include="Content\Images\Asset 32.png" />
+    <Content Include="Content\Images\Asset 33.png" />
+    <Content Include="Content\Images\Asset 34.png" />
+    <Content Include="Content\Images\Asset 35.png" />
+    <Content Include="Content\Images\Asset 36.png" />
+    <Content Include="Content\Images\Asset 37.png" />
+    <Content Include="Content\Images\Asset 4.png" />
+    <Content Include="Content\Images\Asset 5.png" />
+    <Content Include="Content\Images\Asset 6.png" />
+    <Content Include="Content\Images\Asset 7.png" />
+    <Content Include="Content\Images\Asset 8.png" />
+    <Content Include="Content\Images\Asset 9.png" />
+    <Content Include="Content\Images\dog 200w.png" />
+    <Content Include="Content\Images\cat 200w.png" />
+    <Content Include="Content\Images\Asset 10.svg" />
+    <Content Include="Content\Images\lizzard 200w.png" />
+    <Content Include="Content\Images\Asset 3.png" />
+    <Content Include="Content\Images\rabbit 200w.png" />
+    <Content Include="Content\Images\fish 200w.png" />
+    <Content Include="Content\Images\hamster 200w.png" />
+    <Content Include="Content\Images\bird 200w.png" />
+    <Content Include="Content\Images\food 200 w.png" />
+    <Content Include="Content\Images\Asset 9.svg" />
+    <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -271,9 +320,11 @@
     <Content Include="Views\Administration\Create.cshtml" />
     <Content Include="Views\Administration\Details.cshtml" />
     <Content Include="Views\Administration\Edit.cshtml" />
+    <Content Include="Views\Administration\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Daily\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

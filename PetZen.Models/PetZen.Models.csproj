@@ -95,6 +95,7 @@
     <Compile Include="MedicationModels\MedicationDetail.cs" />
     <Compile Include="MedicationModels\MedicationEdit.cs" />
     <Compile Include="MedicationModels\MedicationListItem.cs" />
+    <Compile Include="PetModels\DailyPet.cs" />
     <Compile Include="PetModels\PetCreate.cs" />
     <Compile Include="PetModels\PetDetail.cs" />
     <Compile Include="PetModels\PetEdit.cs" />
