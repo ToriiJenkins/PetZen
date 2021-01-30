@@ -16,4 +16,6 @@ Database:
 Application Information:
 Application is a work in progress. Upcomming improvemnts will include a visual indiator on each pet to indicat if each of the pet's feedings, or medicine administrations has been completed in the present day.  
 
+Deployed at: https://petzenwebmvc20210129205826.azurewebsites.net/Account/Login?ReturnUrl=%2F
+
 Comments or reccomendations can be sent to ToriiJenkins at : 
