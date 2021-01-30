@@ -1,0 +1,35 @@
+﻿.html, .body {
+    height: 100%;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #333333;
+}
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+.input,
+.textarea {
+    max-width: 280px;
+}
+
+.header, .footer {
+    position: fixed;
+}
+
+.card {
+    background-color: #b6cecd;
+    margin: auto;
+    padding: 5px;
+}
+
+

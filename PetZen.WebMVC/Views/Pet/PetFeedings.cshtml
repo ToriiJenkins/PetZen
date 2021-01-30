@@ -1,0 +1,63 @@
+﻿@model IEnumerable<PetZen.Data.FeedingListitem>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OwnerId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FeedDateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PetId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FoodId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AmountFed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Default)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OwnerId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FeedDateTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PetId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FoodId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AmountFed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Default)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Notes)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.FeedingId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.FeedingId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.FeedingId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -67,6 +67,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PetZen.Contracts\PetZen.Contracts.csproj">
+      <Project>{2d424c32-edcb-46dd-a5d0-7f0085d5a7e8}</Project>
+      <Name>PetZen.Contracts</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PetZen.Data\PetZen.Data.csproj">
       <Project>{e89046c5-1ef6-4edf-9584-c3723ff35f06}</Project>
       <Name>PetZen.Data</Name>

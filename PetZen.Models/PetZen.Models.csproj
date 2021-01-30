@@ -83,6 +83,7 @@
     <Compile Include="AdministrationModels\AdministrationDetail.cs" />
     <Compile Include="AdministrationModels\AdministrationEdit.cs" />
     <Compile Include="AdministrationModels\AdministrationListItem.cs" />
+    <Compile Include="DailyInfoModel.cs" />
     <Compile Include="FeedingModels\FeedingCreate.cs" />
     <Compile Include="FeedingModels\FeedingDetail.cs" />
     <Compile Include="FeedingModels\FeedingEdit.cs" />
@@ -100,6 +101,7 @@
     <Compile Include="PetModels\PetDetail.cs" />
     <Compile Include="PetModels\PetEdit.cs" />
     <Compile Include="PetModels\PetListItem.cs" />
+    <Compile Include="PetModels\PetEverything.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

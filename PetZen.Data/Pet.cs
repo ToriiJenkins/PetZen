@@ -30,5 +30,8 @@ namespace PetZen.Data
         [Required]
         public int MealsPerDay { get; set; }
 
+        [Required]
+        public int MedAdminsPerDay { get; set; }
+
     }
 }

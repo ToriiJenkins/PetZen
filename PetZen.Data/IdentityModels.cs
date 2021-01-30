@@ -40,7 +40,7 @@ namespace PetZen.Data
 
         public DbSet<Activity> Activities { get; set; }
 
-        public DbSet<Feeding> Feedings { get; set; }
+        public DbSet<FeedingListitem> Feedings { get; set; }
 
         public DbSet<Administration> Administrations { get; set; }
 

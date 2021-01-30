@@ -20,7 +20,7 @@ namespace PetZen.Services
         public bool CreateFeeding(FeedingCreate model)
         {
             var entity =
-                new Feeding()
+                new FeedingListitem()
                 {
                     OwnerId = _userId,
                     FeedDateTime = DateTimeOffset.Now,
@@ -35,7 +35,7 @@ namespace PetZen.Services
 
             using (var ctx = new ApplicationDbContext())
             {
-                Feeding Feeding = ctx.Feedings.Add(entity);
+                FeedingListitem Feeding = ctx.Feedings.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
@@ -46,7 +46,7 @@ namespace PetZen.Services
             {
                 var query =
                     ctx
-                        .Feedings
+                        .Feedings.OrderBy(e => e.PetId)
                         .Where(e => e.OwnerId == _userId)
                         .Select(
                             e =>
@@ -61,6 +61,7 @@ namespace PetZen.Services
                                     Default = e.Default,
                                     Notes = e.Notes
                                 }
+                        
                          );
                 return query.ToArray();
             }
@@ -124,6 +125,32 @@ namespace PetZen.Services
                 ctx.Feedings.Remove(entity);
 
                 return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public IEnumerable<FeedingListItem> GetFeedingsByPet(int petId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var query =
+                    ctx
+                        .Feedings
+                        .Where(e => e.PetId == petId && e.OwnerId == _userId )
+                        .Select(
+                            e =>
+                                new FeedingListItem
+                                {
+                                    FeedingId = e.FeedingId,
+                                    FeedDateTime = e.FeedDateTime,
+                                    PetName = e.Pet.Name,
+                                    FoodName = e.Food.Name,
+                                    AmountFed = e.AmountFed,
+                                    Measurement = e.Measurement,
+                                    Default = e.Default,
+                                    Notes = e.Notes
+                                }
+                         );
+                return query.ToArray();
             }
         }
     }

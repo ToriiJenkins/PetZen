@@ -24,5 +24,7 @@ namespace PetZen.Models.PetModels
         [Required]
         [Range(1, 4, ErrorMessage = "Enter a value between 1 and 4.")]
         public int MealsPerDay { get; set; }
+
+        public int MedAdminsPerDay { get; set; }
     }
 }

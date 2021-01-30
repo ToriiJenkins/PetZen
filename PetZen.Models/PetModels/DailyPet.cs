@@ -12,8 +12,15 @@ namespace PetZen.Models.PetModels
         public int PetId { get; set; }
         public string Name { get; set; }
 
+        public SpeciesEnum Species { get; set; }
         public int MealsPerDay {get; set;}
 
-        public int MedicationsPerDay { get; set; }
+        public int MedAdminsPerDay { get; set; }
+
+        public IEnumerable<FeedingListitem> ThisPetFeedings { get; set; }
+
+        public IEnumerable<Administration> ThisPetAdministrations { get; set; }
+
+        public IEnumerable<Activity> ThisPetActivities { get; set; }
     }
 }

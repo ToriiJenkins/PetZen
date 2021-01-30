@@ -15,6 +15,8 @@ namespace PetZen.WebMVC.Controllers
     {
         private ApplicationDbContext _db = new ApplicationDbContext();
 
+
+
         // GET: Pet
         [Authorize]
         public ActionResult Index()
@@ -25,6 +27,14 @@ namespace PetZen.WebMVC.Controllers
             return View(model);
         }
 
+        //public ActionResult PetFeedings(int id)
+        //{
+        //    var userId = Guid.Parse(User.Identity.GetUserId());
+        //    var service = new PetService(userId);
+        //    var model = service.GetPetFeedings(id);
+        //    return View(model);
+        //}
+
         //GET: PET/CREATE
         [Authorize]
         public ActionResult Create()
@@ -32,6 +42,29 @@ namespace PetZen.WebMVC.Controllers
             return View();
 
         }
+
+        //public ActionResult showPetInfo (int id)
+        //{
+        //    var userId = Guid.Parse(User.Identity.GetUserId());
+        //    var service = new PetService(userId);
+
+        //    var pet = service.GetPetById(id);
+        //    var PetFeedings = service.GetPetFeedings(id);
+        //    var PetAdministrations = service.GetPetAdmins(id);
+        //    var PetActivities = service.GetPetActivities(id);
+
+        //    var model =
+        //        new PetEverything
+        //        {
+        //            PetId = id,
+        //            PetName = pet.Name,
+        //            PetFeedings = PetFeedings,
+        //            PetAdministrations = PetAdministrations,
+        //            PetActivities = PetActivities
+        //        };
+
+        //    return View(model);
+        //}
 
         //POST: Pet/Create
         [Authorize]
@@ -79,7 +112,8 @@ namespace PetZen.WebMVC.Controllers
                     Breed = detail.Breed,
                     Weight = detail.Weight,
                     DateOfBirth = detail.DateOfBirth,
-                    MealsPerDay = detail.MealsPerDay
+                    MealsPerDay = detail.MealsPerDay,
+                    MedAdminsPerDay =detail.MedAdminsPerDay
 
                 };
             return View(model);

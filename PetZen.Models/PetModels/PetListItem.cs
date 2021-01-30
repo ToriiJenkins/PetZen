@@ -20,5 +20,7 @@ namespace PetZen.Models
 
         public DateTime? DateOfBirth { get; set; }
         public int MealsPerDay { get; set; }
+
+        public int MedAdminsPerDay { get; set; }
     }
 }

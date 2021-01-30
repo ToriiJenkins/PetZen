@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PetZen.Data
 {
-    public class Feeding
+    public class FeedingListitem
     {
         [Key]
         public int FeedingId { get; set; }
